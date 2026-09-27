@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kathy Ye 叶萍 | DDTS</title>
-<meta name="description" content="Kathy Ye, Chairman of Design and Digital Technology Saudi Company Ltd. (DDTS), Al Jubail, Saudi Arabia.">
+<meta name="description" content="Kathy Ye, CEO of Design and Digital Technology Saudi Company Ltd. (DDTS), Al Jubail, Saudi Arabia.">
 <meta property="og:title" content="Kathy Ye | DDTS">
-<meta property="og:description" content="Chairman · Al Jubail, Saudi Arabia">
+<meta property="og:description" content="CEO · Al Jubail, Saudi Arabia">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://ddts-sa.github.io/card/kathy-ye/">
 <link rel="canonical" href="https://ddts-sa.github.io/card/kathy-ye/">
@@ -149,7 +149,7 @@
       <div class="mono" aria-hidden="true">KY</div>
       <div class="names">
         <h1><span data-i18n="name">Kathy Ye</span><span class="alt" data-i18n="alt">叶萍</span></h1>
-        <p class="title" data-i18n="title">Chairman</p>
+        <p class="title" data-i18n="title">CEO</p>
       </div>
     </div>
   </section>
@@ -230,7 +230,7 @@
   /* ========================================================== */
 
   var T = {
-    en:{ name:"Kathy Ye", alt:"叶萍", title:"Chairman",
+    en:{ name:"Kathy Ye", alt:"叶萍", title:"CEO",
       company:"Design and Digital Technology Saudi Company Ltd.", eyebrow:"Digital Business Card", coSub:"Al Jubail · Kingdom of Saudi Arabia", parentK:"Headquarters:",
       call:"Call", email:"Email", map:"Map",
       lblKsa:"Mobile · Saudi Arabia", lblCn:"Mobile · China", lblWx:"WeChat ID", lblEmail:"Email",
@@ -240,7 +240,7 @@
       qrHintWx:"Scan in WeChat to add contact.",
       save:"Save to Contacts", city:"Al Jubail, Saudi Arabia", cr:"CR 2055128244",
       copied:"Copied", linkCopied:"Card link copied", saved:"Contact file downloaded — open it to save" },
-    ar:{ name:"كاثي يي", alt:"Kathy Ye · 叶萍", title:"رئيس مجلس الإدارة",
+    ar:{ name:"كاثي يي", alt:"Kathy Ye · 叶萍", title:"الرئيس التنفيذي",
       company:"شركة ديزاين اند ديجيتال تيكنولوجي السعودية المحدودة", eyebrow:"بطاقة أعمال رقمية", coSub:"الجبيل · المملكة العربية السعودية", parentK:"",
       call:"اتصال", email:"بريد", map:"الموقع",
       lblKsa:"الجوال · السعودية", lblCn:"الجوال · الصين", lblWx:"معرّف وي تشات", lblEmail:"البريد الإلكتروني",
@@ -340,14 +340,14 @@
       "BEGIN:VCARD","VERSION:3.0",
       "N:Ye;Kathy;;Ms.;","FN:Kathy Ye","NICKNAME:叶萍",
       "ORG:Design and Digital Technology Saudi Company Ltd. (DDTS)",
-      "TITLE:Chairman",
+      "TITLE:CEO",
       "TEL;TYPE=CELL,VOICE,PREF:+966502430633",
       "TEL;TYPE=CELL,VOICE:+8613708431475",
       "EMAIL;TYPE=INTERNET,WORK:kathy@ddts.com",
       "URL:https://www.ddts.com",
       "ADR;TYPE=WORK:;;8760 King Abdulaziz Road;Al Jubail;Eastern Province;;Saudi Arabia"
     ];
-    var note = "Chinese name: 叶萍 | Arabic: كاثي يي – رئيس مجلس الإدارة | WhatsApp: +966 50 243 0633";
+    var note = "Chinese name: 叶萍 | Arabic: كاثي يي – الرئيس التنفيذي | WhatsApp: +966 50 243 0633";
     if (hasWx){ v.push("X-WECHAT:" + WECHAT_ID); note += " | WeChat: " + WECHAT_ID; }
     v.push("NOTE:" + note, "END:VCARD");
     return v.join("\r\n");
@@ -364,7 +364,7 @@
   });
 
   document.getElementById("share-card").addEventListener("click", function(){
-    var data = { title:"Kathy Ye | DDTS", text:"Kathy Ye — Chairman, DDTS", url: location.href.split("#")[0] };
+    var data = { title:"Kathy Ye | DDTS", text:"Kathy Ye — CEO, DDTS", url: location.href.split("#")[0] };
     if (navigator.share) navigator.share(data).catch(function(err){ if (!err || err.name !== "AbortError") copyText(data.url, T[lang].linkCopied); });
     else copyText(data.url, T[lang].linkCopied);
   });
