@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Caroline Shi | DDTS</title>
+<title>Caroline Shi 石宁宁 | DDTS</title>
 <meta name="description" content="Caroline Shi, General Manager of Design and Digital Technology Saudi Company Ltd. (DDTS), Al Jubail, Saudi Arabia.">
 <meta property="og:title" content="Caroline Shi | DDTS">
 <meta property="og:description" content="General Manager · Al Jubail, Saudi Arabia">
@@ -148,7 +148,7 @@
     <div class="id">
       <div class="mono" aria-hidden="true">CS</div>
       <div class="names">
-        <h1><span data-i18n="name">Caroline Shi</span><span class="alt" data-i18n="alt"></span></h1>
+        <h1><span data-i18n="name">Caroline Shi</span><span class="alt" data-i18n="alt">石宁宁</span></h1>
         <p class="title" data-i18n="title">General Manager</p>
       </div>
     </div>
@@ -230,7 +230,7 @@
   /* ========================================================== */
 
   var T = {
-    en:{ name:"Caroline Shi", alt:"", title:"General Manager",
+    en:{ name:"Caroline Shi", alt:"石宁宁", title:"General Manager",
       company:"Design and Digital Technology Saudi Company Ltd.", eyebrow:"Digital Business Card", coSub:"Al Jubail · Kingdom of Saudi Arabia", parentK:"Headquarters:",
       call:"Call", email:"Email", map:"Map",
       lblKsa:"Mobile · Saudi Arabia", lblCn:"Mobile · China", lblWx:"WeChat ID", lblEmail:"Email",
@@ -240,7 +240,7 @@
       qrHintWx:"Scan in WeChat to add contact.",
       save:"Save to Contacts", city:"Al Jubail, Saudi Arabia", cr:"CR 2055128244",
       copied:"Copied", linkCopied:"Card link copied", saved:"Contact file downloaded — open it to save" },
-    ar:{ name:"كارولين شي", alt:"Caroline Shi", title:"المدير العام",
+    ar:{ name:"كارولين شي", alt:"Caroline Shi · 石宁宁", title:"المدير العام",
       company:"شركة ديزاين اند ديجيتال تيكنولوجي السعودية المحدودة", eyebrow:"بطاقة أعمال رقمية", coSub:"الجبيل · المملكة العربية السعودية", parentK:"",
       call:"اتصال", email:"بريد", map:"الموقع",
       lblKsa:"الجوال · السعودية", lblCn:"الجوال · الصين", lblWx:"معرّف وي تشات", lblEmail:"البريد الإلكتروني",
@@ -338,7 +338,7 @@
   function buildVcf(){
     var v = [
       "BEGIN:VCARD","VERSION:3.0",
-      "N:Shi;Caroline;;Ms.;","FN:Caroline Shi",
+      "N:Shi;Caroline;;Ms.;","FN:Caroline Shi","NICKNAME:石宁宁",
       "ORG:Design and Digital Technology Saudi Company Ltd. (DDTS)",
       "TITLE:General Manager",
       "TEL;TYPE=CELL,VOICE,PREF:+966556564206",
@@ -347,7 +347,7 @@
       "URL:https://www.ddts.com",
       "ADR;TYPE=WORK:;;8760 King Abdulaziz Road;Al Jubail;Eastern Province;;Saudi Arabia"
     ];
-    var note = "Arabic: كارولين شي – المدير العام | WhatsApp: +966 55 656 4206";
+    var note = "Chinese name: 石宁宁 | Arabic: كارولين شي – المدير العام | WhatsApp: +966 55 656 4206";
     if (hasWx){ v.push("X-WECHAT:" + WECHAT_ID); note += " | WeChat: " + WECHAT_ID; }
     v.push("NOTE:" + note, "END:VCARD");
     return v.join("\r\n");
